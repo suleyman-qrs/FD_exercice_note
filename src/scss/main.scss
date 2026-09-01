@@ -1,0 +1,63 @@
+@import "font";
+@import "base";
+@import "layout";
+@import "modules/example";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFF;
+}
+
+main {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  display: inline-flex;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: var(--Primary-900, #000);
+  color: var(--Primary-100, #F5F5F5);
+}
+
+button:hover {
+  background: var(--Primary-800, #343434);
+}
+
+button:disabled {
+  background: var(--Primary-100, #BBB);
+}
+
+button#small_btn {
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode .button {
+  background: var(--Primary-0, #FFF);
+  color: var(--Primary-900, #000);
+}
+
+.dark-mode .button:hover {
+  background: var(--Primary-500, #B4BBC0);
+  color: var(--Primary-900, #000);
+
+}
+
+.dark-mode .button:hover {
+  color: var(--Primary-100, #BBB);
+}
