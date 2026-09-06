@@ -38,7 +38,7 @@ button:disabled {
   background: var(--Primary-100, #BBB);
 }
 
-button#small_btn {
+button.small {
   padding: 8px 12px;
   border-radius: 12px;
 }
@@ -60,4 +60,8 @@ button#small_btn {
 
 .dark-mode .button:hover {
   color: var(--Primary-100, #BBB);
+}
+
+button:active {
+  background: var(--Primary-700, #4D4D4D);
 }
