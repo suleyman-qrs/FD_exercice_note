@@ -54,6 +54,8 @@ main {
   background: var(--Primary-800);
 }
 
+
+
 .btn:disabled {
   background: var(--Primary-100);
 }
@@ -79,13 +81,11 @@ main {
 
 }
 
-.dark-mode .btn:hover {
-  color: var(--Primary-100);
-}
-
 .btn:active {
   background: var(--Primary-700);
 }
+
 .btn:disabled {
   background: var(--Primary-100);
+  pointer-events: none;
 }
