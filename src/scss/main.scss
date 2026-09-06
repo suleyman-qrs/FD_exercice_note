@@ -3,6 +3,14 @@
 @import "layout";
 @import "modules/example";
 
+/* Il y a deux types de boutons, primary et secondary. 
+Chaque bouton a deux tailles, default ou small.
+Chaque bouton a 3 états à styliser: default, hover, disabled. Attention à bien préciser une transition.
+Les styles doivent pouvoir s’appliquer à des éléments HTML <button>, mais aussi <a>.
+La largeur du bouton est définie par son contenu, et pas avec une largeur fixe.
+Les styles typographiques doivent utiliser des unités CSS relatives (et non pas des pixels).
+Les couleurs doivent utiliser des variables CSS. */
+
 :root {
   --Primary-0: #FFF;
   --Primary-100: #F5F5F5;
@@ -35,22 +43,22 @@ main {
   line-height: normal;
 }
 
-button {
+.btn {
   padding: 16px 20px;
   border-radius: 20px;
   background: var(--Primary-900);
   color: var(--Primary-100);
 }
 
-button:hover {
+.btn:hover {
   background: var(--Primary-800);
 }
 
-button:disabled {
+.btn:disabled {
   background: var(--Primary-100);
 }
 
-button.small {
+.btn_small {
   padding: 8px 12px;
   border-radius: 12px;
   font-size: 0.875rem;
@@ -60,21 +68,24 @@ button.small {
   background-color: black;
 }
 
-.dark-mode button {
-  background: var(--Primary-0, #FFF);
-  color: var(--Primary-900, #000);
+.dark-mode .btn {
+  background: var(--Primary-0);
+  color: var(--Primary-900);
 }
 
-.dark-mode button:hover {
-  background: var(--Primary-500, #B4BBC0);
-  color: var(--Primary-900, #000);
+.dark-mode .btn:hover {
+  background: var(--Primary-500);
+  color: var(--Primary-900);
 
 }
 
-.dark-mode button:hover {
-  color: var(--Primary-100, #BBB);
+.dark-mode .btn:hover {
+  color: var(--Primary-100);
 }
 
-button:active {
-  background: var(--Primary-700, #4D4D4D);
+.btn:active {
+  background: var(--Primary-700);
+}
+.btn:disabled {
+  background: var(--Primary-100);
 }
