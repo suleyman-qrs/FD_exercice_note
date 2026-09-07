@@ -34,13 +34,13 @@ Les couleurs doivent utiliser des variables CSS. */
 main {
   display:flex;
   flex-direction: column;
-  gap: 1em;
-  padding: 1em;
+  gap: 3em;
+  padding: 3em 1.5em;
 
 
 }
 
-.btn {
+.btn_primary {
   border: none;
   font-size: 1em;
   padding: 1em 1.25em;
@@ -67,7 +67,7 @@ main {
 
 }
 
-.btn_small {
+.btn_primary_small {
   border: none;
   padding: 0.5em 0.75em;
   border-radius: 0.75em;
@@ -87,7 +87,9 @@ main {
     background: var(--Primary-700);
   }
 
-  &:disabled {
+  &:disabled,
+  &.is_disabled,
+  &[aria_disabled="true"] {
     background: var(--Primary-100);
     pointer-events: none;
   }
