@@ -22,9 +22,11 @@ Les couleurs doivent utiliser des variables CSS. */
   --Primary-700: #4D4D4D;
   --Primary-800: #343434;
   --Primary-900: #000;
-}
-
-body {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,11 +38,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #000;
-  font-family: Montserrat;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: normal;
+
 }
 
 .btn {
@@ -48,44 +46,71 @@ main {
   border-radius: 20px;
   background: var(--Primary-900);
   color: var(--Primary-100);
-}
 
-.btn:hover {
-  background: var(--Primary-800);
-}
+  &:hover {
+    background: var(--Primary-800);
+    }
 
+  &:disabled {
+    background: var(--Primary-100);
+  }
+  &:active {
+    background: var(--Primary-700);
+  }
 
+  &:disabled {
+    background: var(--Primary-100);
+    pointer-events: none;
+  }
 
-.btn:disabled {
-  background: var(--Primary-100);
 }
 
 .btn_small {
   padding: 8px 12px;
   border-radius: 12px;
   font-size: 0.875rem;
+  background: var(--Primary-900);
+  color: var(--Primary-100);
+
+  &:hover {
+    background: var(--Primary-800);
+    }
+
+  &:disabled {
+    background: var(--Primary-100);
+  }
+  &:active {
+    background: var(--Primary-700);
+  }
+
+  &:disabled {
+    background: var(--Primary-100);
+    pointer-events: none;
+  }
+
 }
 
 .dark-mode {
   background-color: black;
+
+  & .btn {
+    background: var(--Primary-0);
+    color: var(--Primary-900);
+  }
+
+  & .btn:hover {
+    background: var(--Primary-500);
+    color: var(--Primary-900);
+  }
+
+  & .btn_small:hover {
+    background: var(--Primary-500);
+    color: var(--Primary-900);
+  }
+
+  & .btn_small {
+    background: var(--Primary-0);
+    color: var(--Primary-900);
+  }
 }
 
-.dark-mode .btn {
-  background: var(--Primary-0);
-  color: var(--Primary-900);
-}
-
-.dark-mode .btn:hover {
-  background: var(--Primary-500);
-  color: var(--Primary-900);
-
-}
-
-.btn:active {
-  background: var(--Primary-700);
-}
-
-.btn:disabled {
-  background: var(--Primary-100);
-  pointer-events: none;
-}
