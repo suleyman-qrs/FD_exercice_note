@@ -29,7 +29,6 @@ Les couleurs doivent utiliser des variables CSS. */
   line-height: normal;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 main {
@@ -37,8 +36,6 @@ main {
   flex-direction: column;
   gap: 1em;
   padding: 5em;
-
-
 }
 
 .btn {
@@ -66,7 +63,6 @@ main {
     background: var(--Primary-100);
     pointer-events: none;
   }
-
 }
 
 
