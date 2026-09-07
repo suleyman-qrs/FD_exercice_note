@@ -35,18 +35,21 @@ Les couleurs doivent utiliser des variables CSS. */
 
 main {
   display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+
 
 }
 
 .btn {
   border: none;
+  font-size: 1em;
   padding: 1em 1.25em;
   border-radius: 1.25em;
   background: var(--Primary-900);
   color: var(--Primary-100);
+  border: none;
 
   &:hover {
     background: var(--Primary-800);
@@ -73,6 +76,7 @@ main {
   font-size: 0.875em;
   background: var(--Primary-900);
   color: var(--Primary-100);
+  border: none; 
 
   &:hover {
     background: var(--Primary-800);
