@@ -35,13 +35,13 @@ Les couleurs doivent utiliser des variables CSS. */
 main {
   display:flex;
   flex-direction: column;
-  gap: 3em;
-  padding: 3em 1.5em;
+  gap: 1em;
+  padding: 5em;
 
 
 }
 
-.btn_primary {
+.btn {
   border: none;
   font-size: 1em;
   padding: 1em 1.25em;
@@ -49,6 +49,7 @@ main {
   background: var(--Primary-900);
   color: var(--Primary-100);
   border: none;
+  font-family: inherit;
 
   &:hover {
     background: var(--Primary-800);
@@ -68,34 +69,8 @@ main {
 
 }
 
-.btn_secondary {
-  border: none;
-  font-size: 1em;
-  padding: 1em 1.25em;
-  border-radius: 1.25em;
-  background: var(--Primary-900);
-  color: var(--Primary-100);
-  border: none;
 
-  &:hover {
-    background: var(--Primary-800);
-    }
-
-  &:disabled {
-    background: var(--Primary-450);
-  }
-  &:active {
-    background: var(--Primary-700);
-  }
-
-  &:disabled {
-    background: var(--Primary-100);
-    pointer-events: none;
-  }
-
-}
-
-.btn_primary_small {
+.btn_small {
   border: none;
   padding: 0.5em 0.75em;
   border-radius: 0.75em;
@@ -103,6 +78,7 @@ main {
   background: var(--Primary-900);
   color: var(--Primary-100);
   border: none; 
+  font-family: inherit;
 
   &:hover {
     background: var(--Primary-800);
@@ -114,6 +90,18 @@ main {
   &:active {
     background: var(--Primary-700);
   }
+}
+
+a  {
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  padding: 1em 1.25em;
+  border-radius: 1.25em;
+  background: var(--Primary-900);
+  color: var(--Primary-100);
+  font-family: inherit;
+
 
   &:disabled,
   &.is_disabled,
@@ -121,7 +109,6 @@ main {
     background: var(--Primary-450);
     pointer-events: none;
   }
-
 }
 
 .dark-mode {
@@ -145,6 +132,16 @@ main {
   & .btn_small {
     background: var(--Primary-0);
     color: var(--Primary-900);
+  }
+
+  & .is_disabled {
+    background: var(--Primary-200);
+    color: var(--Primary-450);
+  }
+
+  & h1, p {
+    color: var(--Primary-0);
+    background: var(--Primary-900);
   }
 }
 
