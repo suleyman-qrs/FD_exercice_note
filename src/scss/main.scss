@@ -12,15 +12,15 @@ Les styles typographiques doivent utiliser des unités CSS relatives (et non pas
 Les couleurs doivent utiliser des variables CSS. */
 
 :root {
-  --Primary-0: #FFF;
-  --Primary-100: #F5F5F5;
-  --Primary-200: #E6E6E6;
-  --Primary-300: #D9D9D9;
-  --Primary-400: #CCCCCC;
-  --Primary-450: #BBBBBB;
-  --Primary-500: #B4BBC0;
+  --Primary-0: #fff;
+  --Primary-100: #f5f5f5;
+  --Primary-200: #e6e6e6;
+  --Primary-300: #d9d9d9;
+  --Primary-400: #cccccc;
+  --Primary-450: #bbbbbb;
+  --Primary-500: #b4bbc0;
   --Primary-600: #999999;
-  --Primary-700: #4D4D4D;
+  --Primary-700: #4d4d4d;
   --Primary-800: #343434;
   --Primary-900: #000;
   font-family: Montserrat;
@@ -32,7 +32,7 @@ Les couleurs doivent utiliser des variables CSS. */
 }
 
 main {
-  display:flex;
+  display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 5em;
@@ -50,7 +50,7 @@ main {
 
   &:hover {
     background: var(--Primary-800);
-    }
+  }
 
   &:disabled {
     background: var(--Primary-450);
@@ -65,20 +65,19 @@ main {
   }
 }
 
-
-.btn_small {
+.btn-small {
   border: none;
   padding: 0.5em 0.75em;
   border-radius: 0.75em;
   font-size: 0.875em;
   background: var(--Primary-900);
   color: var(--Primary-100);
-  border: none; 
+  border: none;
   font-family: inherit;
 
   &:hover {
     background: var(--Primary-800);
-    }
+  }
 
   &:disabled {
     background: var(--Primary-450);
@@ -88,7 +87,7 @@ main {
   }
 }
 
-a  {
+a {
   text-decoration: none;
   border: none;
   font-size: 1em;
@@ -98,10 +97,9 @@ a  {
   color: var(--Primary-100);
   font-family: inherit;
 
-
   &:disabled,
-  &.is_disabled,
-  &[aria_disabled="true"] {
+  &.is-disabled,
+  &[aria-disabled="true"] {
     background: var(--Primary-450);
     pointer-events: none;
   }
@@ -120,24 +118,24 @@ a  {
     color: var(--Primary-900);
   }
 
-  & .btn_small:hover {
+  & .btn-small:hover {
     background: var(--Primary-500);
     color: var(--Primary-900);
   }
 
-  & .btn_small {
+  & .btn-small {
     background: var(--Primary-0);
     color: var(--Primary-900);
   }
 
-  & .is_disabled {
+  & .is-disabled {
     background: var(--Primary-200);
     color: var(--Primary-450);
   }
 
-  & h1, p {
+  & h1,
+  p {
     color: var(--Primary-0);
     background: var(--Primary-900);
   }
 }
-
