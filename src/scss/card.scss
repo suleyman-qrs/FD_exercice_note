@@ -6,11 +6,71 @@
   --Primary-900: #000;
 }
 
+.image {
+  width: 17.75em;
+  height: 17.75em;
+  aspect-ratio: 1/1;
+}
+
+.exercise-Card {
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  background-color: var(--Primary-0);
+  padding: 0.625em;
+  border-radius: 1.875em;
+  box-shadow: 0em 0.3em 0.6em 0.1em var(--Primary-900);
+}
+
 .card {
   width: 100%;
 }
 
-.img {
-  width: 100%;
-  height: auto;
+.card-header {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--Primary-900);
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.625em;
+}
+
+.card-body p {
+  font-size: 0.875em;
+  color: var(--Primary-600);
+  margin: 0;
+}
+
+.card-price {
+  margin-top: 0.9375em;
+}
+
+.card-info-item {
+  margin-top: 0.9375em;
+}
+
+.card-info-item p {
+  font-size: 0.875em;
+  font-weight: bold;
+  display: inline;
+  margin-left: 0.3125em;
+}
+
+.card-price svg {
+  width: 1em;
+  height: 1em;
+}
+
+.card-info-item svg {
+  width: 1em;
+  height: 1em;
+}
+
+.btn-icon {
+  width: 1em;
+  height: 1em;
 }
