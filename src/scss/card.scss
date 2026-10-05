@@ -4,7 +4,7 @@
   --Primary-500: #b4bbc0;
   --Primary-600: #6c6f72;
   --Primary-900: #000;
-  --Primary-600-figma: #6c6f72;
+  --Primary-660: #6c6f72;
   --Primary-900-50: rgb(0 0 0 / 50%);
 }
 
@@ -112,7 +112,17 @@
   display: flex;
   width: 1440px;
   height: 1024px;
-  margin: -5em -5em 0;
-  padding: 1.5rem;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   background: url("../images/Hero.svg") center / cover no-repeat;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
 }

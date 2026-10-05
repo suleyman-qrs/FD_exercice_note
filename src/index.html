@@ -62,11 +62,43 @@
       </article>
       <section class="hero" id="exersice-hero">
         <div class="hero-container">
-          <header class="hero-header"></header>
           <div class="hero-content">
-            <h2 class="hero-title">Ready for take off?</h2>
+            <div class="filter">
+              <form class="filters">
+        <h2>Start booking your flight now</h2>
 
-            <div class="filter"></div>
+        <div class="filter-trip">
+          <label><input type="radio" name="trip" /> One way</label>
+          <label><input type="radio" name="trip" checked /> Round trip</label>
+            </div>
+        <div class="filter-route">
+          <label for="from">From</label>
+              <input type="text" id="from" value="Geneva" />
+            </div>
+            <button type="button" class="swap"><img src="images/swap.svg" alt="Swap" /></button>
+              <div>
+              <label for="to">To</label>
+              <input type="text" id="to" value="San Francisco" />
+            </div>
+          </div>
+          <div class="filter-calendar">
+            <label for="start">From</label>
+            <div class="line">
+              <img src="images/calendar.svg" alt="" />
+              <input type="text" id="start" value="31 May 2027" />
+              <img src="images/chevron.svg" alt="" />
+            </div>
+          </div>
+          <div class="filter-passengers">
+            <label for="people">Passengers</label>
+            <div class="line">
+              <img src="images/passengers.svg" alt="" />
+              <input type="number" id="people" value="1" />
+              <img src="images/chevron.svg" alt="" />
+            </div>
+          </div>
+
+          <button type="submit" class="search">Search</button>
           </div>
         </div>
       </section>
