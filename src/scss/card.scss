@@ -4,6 +4,8 @@
   --Primary-500: #b4bbc0;
   --Primary-600: #6c6f72;
   --Primary-900: #000;
+  --Primary-600-figma: #6c6f72;
+  --Primary-900-50: rgb(0 0 0 / 50%);
 }
 
 .image {
@@ -104,4 +106,13 @@
   align-items: center;
   gap: 1.5em;
   margin-top: 0.9375em;
+}
+
+.hero {
+  display: flex;
+  width: 1440px;
+  height: 1024px;
+  margin: -5em -5em 0;
+  padding: 1.5rem;
+  background: url("../images/Hero.svg") center / cover no-repeat;
 }
