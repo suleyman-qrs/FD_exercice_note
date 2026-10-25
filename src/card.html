@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <a href="index.html">← All exercises</a>
+      <article class="exercise-Card" id="exercise-Card">
+        <div class="card">
+          <icon class="image" src="images/Image.svg" alt="San Francisco"></icon>
+          <div class="card-header">
+            <h2>San Francisco</h2>
+          </div>
+          <div class="card-body">
+            <p>Premier economy</p>
+            <div class="price-info">
+              <div class="card-price">
+                <icon src="images/tag.svg"></icon>
+                <span class="card-price-amount">900 CHF</span>
+              </div>
+              <div class="card-info">
+                <div class="card-info-item">
+                  <icon src="images/plane.svg"></icon>
+                  <p>SFO</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-small">Search flight</button>
+              <button class="btn-icon" aria-label="Add to favorite">
+                <icon src="images/Save to favorite.svg"></icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise Hero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="exersice-hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="filter">
+              <form class="filters">
+                <h2>Start booking your flight now</h2>
+
+                <div class="filter-trip">
+                  <label><input type="radio" name="trip" /> One way</label>
+                  <label
+                    ><input type="radio" name="trip" checked /> Round
+                    trip</label
+                  >
+                </div>
+
+                <div class="filter-inputs">
+                  <div class="filter-route">
+                    <div>
+                      <label for="from">From</label>
+                      <input type="text" id="from" value="Geneva" />
+                    </div>
+                    <button type="button" class="swap">
+                      <img src="images/swap.svg" alt="Swap" />
+                    </button>
+                    <div>
+                      <label for="to">To</label>
+                      <input type="text" id="to" value="San Francisco" />
+                    </div>
+                  </div>
+                  <div class="filter-calendar">
+                    <label for="start">From</label>
+                    <div>
+                      <img src="images/calendar.svg" alt="" />
+                      <input type="text" id="start" value="31 May 2027" />
+                      <img src="images/chevron.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="filter-calendar">
+                    <label for="end">Until</label>
+                    <div>
+                      <img src="images/calendar.svg" alt="" />
+                      <input type="text" id="end" value="15 June 2027" />
+                      <img src="images/chevron.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="filter-passengers">
+                    <label for="people">Passengers</label>
+                    <div>
+                      <img src="images/passengers.svg" alt="" />
+                      <input type="number" id="people" value="1" />
+                      <img src="images/chevron.svg" alt="" />
+                    </div>
+                  </div>
+                  <button type="submit" class="search">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

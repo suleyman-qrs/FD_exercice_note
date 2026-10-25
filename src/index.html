@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Exercises</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,113 +14,12 @@
   </head>
   <body>
     <main>
-      <section class="exercise" id="exercise-CTA">
-        <div>
-          <h1>Exercise CTA</h1>
-          <p>
-            Click the button to toggle dark mode. Hover over the buttons to see
-            the effect.
-          </p>
-          <button id="dark-mode-toggle">Toggle dark mode</button>
-
-          <button class="btn">label</button>
-          <button class="btn-small">label</button>
-
-          <a href="#" class="btn is-disabled" aria-disabled="true">Label</a>
-        </div>
-      </section>
-
-      <article class="exercise-Card" id="exercise-Card">
-        <div class="card">
-          <icon class="image" src="images/Image.svg" alt="San Francisco"></icon>
-          <div class="card-header">
-            <h2>San Francisco</h2>
-          </div>
-          <div class="card-body">
-            <p>Premier economy</p>
-            <div class="price-info">
-              <div class="card-price">
-                <icon src="images/tag.svg"></icon>
-                <span class="card-price-amount">900 CHF</span>
-              </div>
-              <div class="card-info">
-                <div class="card-info-item">
-                  <icon src="images/plane.svg"></icon>
-                  <p>SFO</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer">
-              <button class="btn-small">Search flight</button>
-              <button class="btn-icon" aria-label="Add to favorite">
-                <icon src="images/Save to favorite.svg"></icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-      <section class="hero" id="exersice-hero">
-        <div class="hero-container">
-          <div class="hero-content">
-            <div class="filter">
-              <form class="filters">
-                <h2>Start booking your flight now</h2>
-
-                <div class="filter-trip">
-                  <label><input type="radio" name="trip" /> One way</label>
-                  <label
-                    ><input type="radio" name="trip" checked /> Round
-                    trip</label
-                  >
-                </div>
-
-                <div class="filter-inputs">
-                  <div class="filter-route">
-                    <div>
-                      <label for="from">From</label>
-                      <input type="text" id="from" value="Geneva" />
-                    </div>
-                    <button type="button" class="swap">
-                      <img src="images/swap.svg" alt="Swap" />
-                    </button>
-                    <div>
-                      <label for="to">To</label>
-                      <input type="text" id="to" value="San Francisco" />
-                    </div>
-                  </div>
-                  <div class="filter-calendar">
-                    <label for="start">From</label>
-                    <div>
-                      <img src="images/calendar.svg" alt="" />
-                      <input type="text" id="start" value="31 May 2027" />
-                      <img src="images/chevron.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="filter-calendar">
-                    <label for="end">Until</label>
-                    <div>
-                      <img src="images/calendar.svg" alt="" />
-                      <input type="text" id="end" value="15 June 2027" />
-                      <img src="images/chevron.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="filter-passengers">
-                    <label for="people">Passengers</label>
-                    <div>
-                      <img src="images/passengers.svg" alt="" />
-                      <input type="number" id="people" value="1" />
-                      <img src="images/chevron.svg" alt="" />
-                    </div>
-                  </div>
-                  <button type="submit" class="search">Search</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <h1>Exercises</h1>
+      <ul>
+        <li><a href="cta.html">Exercise CTA</a></li>
+        <li><a href="card.html">Exercise Card</a></li>
+        <li><a href="hero.html">Exercise Hero</a></li>
+      </ul>
     </main>
-    <script src="js/main.js" type="module"></script>
   </body>
 </html>
