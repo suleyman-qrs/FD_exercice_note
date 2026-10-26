@@ -2,6 +2,8 @@ $grid-card-size: 3;
 $page-grid-size: 2;
 $grid-card-gap: 32px;
 $page-grid-gap: 40px;
+$search-info-gap: 32px;
+$search-border-radius: 20px;
 
 .grid {
   display: grid;
@@ -27,8 +29,12 @@ $page-grid-gap: 40px;
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 32px;
-  border-radius: 20px;
+  gap: $search-info-gap;
+  border-radius: $search-border-radius;
   color: var(--Primary-0);
   background-color: var(--Primary-900-70);
+}
+
+.exercise-Card {
+  max-width: none;
 }
