@@ -41,3 +41,14 @@ $page-grid-padding-td: 40px;
   background-color: var(--Primary-900-70);
   padding: $search-padding;
 }
+
+.h2 {
+  color: var(--Primary-0, #fff);
+  font-family: Montserrat;
+  font-size: 28px;
+}
+
+.p {
+  font-family: Montserrat;
+  font-size: 20px;
+}
