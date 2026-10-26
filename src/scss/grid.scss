@@ -1,0 +1,10 @@
+$grid-size: 3;
+$grid-gap: 32px;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat($grid-size, 1fr);
+  grid-template-rows: repeat($grid-size, 1fr);
+  gap: $grid-gap;
+  background-color: var(--Primary-200);
+}
