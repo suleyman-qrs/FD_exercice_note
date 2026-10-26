@@ -20,7 +20,7 @@ $search-border-radius: 20px;
 
 .see-more {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
   justify-content: center;
 }
 
