@@ -1,10 +1,17 @@
-$grid-size: 3;
-$grid-gap: 32px;
+$grid-card-size: 3;
+$page-grid-size: 2;
+$grid-card-gap: 32px;
+$page-grid-gap: 40px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($page-grid-size, 1fr);
+  gap: $page-grid-gap;
+  background-color: var(--Primary-200);
+}
 
 .cards {
   display: grid;
-  grid-template-columns: repeat($grid-size, 1fr);
-  grid-template-rows: repeat($grid-size, 1fr);
-  gap: $grid-gap;
-  background-color: var(--Primary-200);
+  grid-template-columns: repeat($grid-card-size, 1fr);
+  gap: $grid-card-gap;
 }
