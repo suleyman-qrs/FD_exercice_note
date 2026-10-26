@@ -1,15 +1,15 @@
 $grid-card-size: 3;
 $page-grid-size: 2;
-$grid-card-gap: 32px;
-$page-grid-gap: 40px;
-$search-info-gap: 32px;
-$search-border-radius: 20px;
-$search-padding: 20px;
-$page-grid-padding-lr: 80px;
-$page-grid-padding-td: 40px;
+$grid-card-gap: 2rem;
+$page-grid-gap: 2.5rem;
+$search-info-gap: 2rem;
+$search-border-radius: 1.25rem;
+$search-padding: 1.25rem;
+$page-grid-padding-lr: 5rem;
+$page-grid-padding-td: 2.5rem;
 $font-family: Montserrat;
-$font-size-h2: 28px;
-$font-size-p: 20px;
+$font-size-h2: 1.75rem;
+$font-size-p: 1.25rem;
 
 .grid {
   display: grid;
