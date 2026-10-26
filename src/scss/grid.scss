@@ -7,6 +7,9 @@ $search-border-radius: 20px;
 $search-padding: 20px;
 $page-grid-padding-lr: 80px;
 $page-grid-padding-td: 40px;
+$font-family: Montserrat;
+$font-size-h2: 28px;
+$font-size-p: 20px;
 
 .grid {
   display: grid;
@@ -44,11 +47,10 @@ $page-grid-padding-td: 40px;
 
 .h2 {
   color: var(--Primary-0, #fff);
-  font-family: Montserrat;
-  font-size: 28px;
+  font-family: $font-family;
+  font-size: $font-size-h2;
 }
 
 .p {
-  font-family: Montserrat;
-  font-size: 20px;
+  font-size: $font-size-p;
 }
