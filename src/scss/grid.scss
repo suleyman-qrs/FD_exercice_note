@@ -21,3 +21,14 @@ $page-grid-gap: 40px;
   grid-template-columns: 1fr;
   justify-content: center;
 }
+
+.search-info-container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  border-radius: 20px;
+  color: var(--Primary-0);
+  background-color: var(--Primary-900-70);
+}
