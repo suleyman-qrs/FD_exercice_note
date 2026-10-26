@@ -5,27 +5,21 @@ $page-grid-gap: 40px;
 $search-info-gap: 32px;
 $search-border-radius: 20px;
 $search-padding: 20px;
+$page-grid-padding-lr: 80px;
+$page-grid-padding-td: 40px;
 
 .grid {
-  display: inline-grid;
-  padding: 80px 40px;
+  display: grid;
+  padding: $page-grid-padding-lr $page-grid-padding-td;
   column-gap: $page-grid-gap;
-  align-self: stretch;
-  grid-template-rows: fit-content(100%) 0px;
   grid-template-columns: minmax(0, 1fr) fit-content(100%);
   background-color: var(--Primary-200);
 }
 
 .card-result {
-  display: inline-grid;
-  width: 964px;
-  row-gap: 32px;
-  column-gap: 33px;
-  grid-template-rows: repeat(4, fit-content(100%));
-  grid-template-columns: repeat(3, fit-content(100%));
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
-  grid-auto-flow: row;
+  display: grid;
+  grid-template-columns: repeat($grid-card-size, fit-content(100%));
+  gap: $grid-card-gap;
 }
 
 .see-more {
@@ -40,10 +34,7 @@ $search-padding: 20px;
   align-self: start;
   display: flex;
   flex-direction: column;
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
   align-items: flex-start;
-  justify-self: stretch;
   gap: $search-info-gap;
   border-radius: $search-border-radius;
   color: var(--Primary-0);
