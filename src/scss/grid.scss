@@ -10,7 +10,7 @@ $page-grid-gap: 40px;
   background-color: var(--Primary-200);
 }
 
-.cards {
+.card-result {
   display: grid;
   grid-template-columns: repeat($grid-card-size, 1fr);
   gap: $grid-card-gap;
